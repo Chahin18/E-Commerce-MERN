@@ -62,7 +62,7 @@ function NavBar_({}) {
                 <div className='nav-space'>
                     <div>
                         <i className='fa fa-phone' aria-hidden="true"></i>
-                        <p>+21625275</p>
+                        <p>+216 58 016 896</p>
                     </div>
                     <div>
                         <i className='fa fa-envelope' aria-hidden="true"></i>
@@ -70,7 +70,7 @@ function NavBar_({}) {
                     </div>
                     <div>
                         <i className='fa fa-globe' aria-hidden="true"></i>
-                        <p>Tunisia</p>
+                        <p>Tunisia , Gabes</p>
                     </div>
                 </div>
                 <div>

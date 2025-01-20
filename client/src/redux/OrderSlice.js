@@ -29,7 +29,7 @@ const BaseUrl = 'ecommerce-back-sandy.vercel.app'
 
 export const AddOrder = createAsyncThunk('order/add', async ({ userId, products, totalAmount }) => {
     try {
-        let result = await axios.post('http://localhost:3000/order/', { userId, products, totalAmount });
+        let result = await axios.post('https://e-commerce-mern-el4c.vercel.app/order/', { userId, products, totalAmount });
         return result.data;
     } catch (error) {
         console.log(error);
@@ -39,7 +39,7 @@ export const AddOrder = createAsyncThunk('order/add', async ({ userId, products,
 
 export const AllOrders = createAsyncThunk('order/all', async() => {
     try {
-        let result = await axios.get('http://localhost:3000/order/');
+        let result = await axios.get('https://e-commerce-mern-el4c.vercel.app/order/');
         return result;
     } catch (error) {
         console.log(error);
@@ -48,7 +48,7 @@ export const AllOrders = createAsyncThunk('order/all', async() => {
 
 export const UpdateOrder_Put = createAsyncThunk('order/all', async({id, state}) => {
     try {
-        let result = await axios.put(`http://localhost:3000/order/${id}`, state);
+        let result = await axios.put(`https://e-commerce-mern-el4c.vercel.app/order/${id}`, state);
         return result;
     } catch (error) {
         console.log(error);
